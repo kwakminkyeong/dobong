@@ -566,7 +566,7 @@ slide_pan{
      top:0px;
      left: 80px;
 }
-/*========================================이거 안돼요!!!*/
+/*========================================이거 안돼요!!!   */
 .board_cont{
      width: 1200px;
      height: 270px;
@@ -580,7 +580,7 @@ slide_pan{
      top: 33px;
 
 }
-/*==========.board에 position:relative주고 ==========================*/
+/*==========.board에 position:relative 부모. .board_cont에 absolute를 적용하면 떠버림요. ==========================*/
 .contents {
      width:23%;
      height:261px;

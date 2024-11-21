@@ -106,7 +106,7 @@ for(let i=0; i<sns.length; i++){
     });
 };
 
-let snsRight=document.getElementsByClassName("sns_right");
+/*let snsRight=document.getElementsByClassName("sns_right");
 let snsHover=document.getElementsByClassName("snshover");
 snsRight[0].addEventListener("mouseover", function(){
     snsHover[0].setAttribute("style","display:block;" );
@@ -114,12 +114,45 @@ snsRight[0].addEventListener("mouseover", function(){
 
 snsRight[0].addEventListener("mouseout", function(){
     snsHover[0].setAttribute("style","display:none;" );
+});*/
+
+$(".sns_right").mouseover(()=>{
+    $(".snshover").fadeIn();
 });
-
-
- 
+$(".snshover").mouseout(()=>{
+    $(".snshover").fadeOut();
+});
   
 
+//=================================================  공지사항 행사/모집 언론보도
+
+let board=document.getElementsByClassName("bt");
+let group00=document.getElementsByClassName("board_cont");
+
+function displaynone00() {
+    for (let j = 0; j < group00.length; j++) {
+        group00[j].setAttribute("style","display:none;");
+    }
+}
+
+for(let i=0; i<board.length; i++){
+    board[i].addEventListener("mouseover", function(){
+        board[i].setAttribute("style","color:red; border-bottom:4px solid red; font-size:bold;");
+    
+    });
+    board[i].addEventListener("click",function(){
+        displaynone00();
+        group00[i].setAttribute("style","display:block;");
+        
+    });
+    
+
+    
+    board[i].addEventListener("mouseout", function(){
+        board[i].removeAttribute("style");
+    });
+
+};
 
 
 
@@ -128,34 +161,46 @@ snsRight[0].addEventListener("mouseout", function(){
 
 
 
-//=================================================사이트
+//=================================================  사이트
+
 let site=document.getElementsByClassName("name");
 let group=document.getElementsByClassName("site_box_00");
 
 function displaynone() {
     for (let j = 0; j < group.length; j++) {
         group[j].setAttribute("style","display:none;");
+        
     }
+    for (let j = 0; j < site.length; j++) {
+        site[j].removeAttribute("style");
+    }    
 }
 
 for(let i=0; i<site.length; i++){
     site[i].addEventListener("mouseover", function(){
-        site[i].setAttribute("style","color:red; border-bottom:4px solid red; font-size:bold;");
+        this.setAttribute("style","color:red; border-bottom:4px solid red; font-size:bold;");
     
     });
+
+    site[i].addEventListener("mouseout", function(){
+        this.removeAttribute("style");
+    });
+
     site[i].addEventListener("click",function(){
+        this.setAttribute("style","color:red; border-bottom:4px solid red; font-size:bold;");
         displaynone();
         group[i].setAttribute("style","display:block;");
+        
         
     });
     
 
     
-    site[i].addEventListener("mouseout", function(){
-        site[i].removeAttribute("style");
-    });
-
+    
 };
+
+
+//================================================================more
 
 let linkmore=document.getElementsByClassName("link_more");
 
