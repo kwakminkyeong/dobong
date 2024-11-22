@@ -129,7 +129,11 @@ $(".snshover").mouseout(()=>{
 let board=document.getElementsByClassName("bt");
 let group00=document.getElementsByClassName("board_cont");
 
-
+function displaynone00() {
+    for (let j = 0; j < group00.length; j++) {
+        group00[j].setAttribute("style","display:none;");
+    }
+}
 
 for(let i=0; i<board.length; i++){
     board[i].addEventListener("mouseover", function(){
@@ -137,8 +141,8 @@ for(let i=0; i<board.length; i++){
     
     });
     board[i].addEventListener("click",function(){
-       
-        group00[i].setAttribute("style","display:block;");
+        displaynone00();
+        group00[i].setAttribute("style","display:block;  display: flex; flex-wrap: wrap;  justify-content: space-between;");
         
     });
     
