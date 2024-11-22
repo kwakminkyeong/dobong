@@ -217,7 +217,7 @@ input[type="search"]:focus{
      float: left;
 }
 .pan01 div img{
-     width: 100%;
+     /* width: 100%; */
      height: 100%;
 }
 slide_pan{
@@ -259,29 +259,29 @@ slide_pan{
      transition: transform .3s;
 }
 .info div:first-child{
-     background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info05_bg_icon_new.png) no-repeat ;
+     background:  url(https://www.dobong.go.kr/images/2023/main/info05_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .info div:nth-child(2){
-     background: #ffdeb5 url(https://www.dobong.go.kr/images/2023/main/info01_bg_icon_new.png) no-repeat ;
+     background:  url(https://www.dobong.go.kr/images/2023/main/info01_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .info div:nth-child(3){
-     background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info02_bg_icon_new.png) no-repeat ;
+     background:  url(https://www.dobong.go.kr/images/2023/main/info02_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .info div:nth-child(4){
-     background: #ffdeb5 url(https://www.dobong.go.kr/images/2023/main/info03_bg_icon_new.png) no-repeat ;
+     background:  url(https://www.dobong.go.kr/images/2023/main/info03_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .info div:last-child{
-     background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info04_bg_icon_new.png) no-repeat ;
+     background:  url(https://www.dobong.go.kr/images/2023/main/info04_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .service{
      width:100%;
      background-color: #fff7f4;
-     /* position: relative; */
+     
      
 }
 
@@ -289,34 +289,36 @@ slide_pan{
      width:1200px;
      height:300px;
      margin:0 auto ;
-     background-color: aqua;
-    
+     position: relative;
 }
 .pan{
      width:calc(100% - 130px);
      height:300px;
      margin:0 auto;
-     background-color: rgb(245, 63, 184);
      overflow: hidden;
     
 }
-.btn_prev{
-     width: 65px;
-     float: left;
-     background-color: #fff7f4;
-}
-.btn_next{
-     width:65px;
-     float: left;
-     background-color: #fff7f4;
-}
+
 .service_btn_prev{
-     background: url(https://www.dobong.go.kr/images/2023/main/arr2_left_on.png) ;
-     background-size: cover;
+     width:15px;
+     height: 15px;
+     border: none;
+     position: absolute;
+     top:0px;
+     left: 0px;
+     transform: translate(0, 770%);
+     background: url(https://www.dobong.go.kr/images/2023/main/arr2_left_on.png) no-repeat center ;
     
 }
 .service_btn_next{
-     background: url(https://www.dobong.go.kr/images/2023/main/arr2_right_on.png) ;
+     width:15px;
+     height: 15px;
+     border: none;
+     position: absolute;
+     top:0px;
+     right: 0px;
+     transform: translate(0, 770%);
+     background: url(https://www.dobong.go.kr/images/2023/main/arr2_right_on.png) no-repeat center ;
      
 }
 .service_01 > button:focus{
@@ -337,7 +339,6 @@ slide_pan{
 .service_01 li {
     width: 4.6%;
      height:171px;
-     background-color: rgb(255, 104, 104);
      margin: 65px auto;
      text-align: center;
      font-size: 15px;
@@ -577,7 +578,6 @@ slide_pan{
 .board> div:nth-child(5){
      z-index: 86;
 }
-
 
 .contents {
      width:23%;
