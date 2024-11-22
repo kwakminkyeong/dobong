@@ -568,21 +568,16 @@ slide_pan{
      position: absolute;
      top: 87px;
 }
-.board:nth-chaild(3){
-     position: absolute;
-     background-color: RED;
-     z-index: 47;
+.board>div:nth-child(3){
+     z-index: 88;
 }
-.board:nth-chaild(4){
-     position: absolute;
-     background-color: rgb(34, 75, 255);
-     z-index: 46;
+.board >div:nth-child(4){
+     z-index: 87;
 }
-.board:nth-chaild(5){
-     position: absolute;
-     background-color: rgb(146, 238, 27);
-     z-index: 45;
+.board> div:nth-child(5){
+     z-index: 86;
 }
+
 
 .contents {
      width:23%;
