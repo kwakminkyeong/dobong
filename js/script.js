@@ -6,7 +6,7 @@ setInterval(function() {
     let firstChild = pan01.querySelector("div:first-child");
 
     // 좌측이동 ============================================================좌측으로 부드럽게 이동하기
-    pan01.setAttribute("style", "left: -587px; transition:3s"); 
+    pan01.setAttribute("style", "left: -586px; transition:3s"); 
     
    
     // 마지막 이미지 뒤에 첫번째 그림 붙이기
@@ -21,7 +21,7 @@ setInterval(function() {
 
 
     //======좌측이등======
-    pan02.setAttribute("style", "left: -587px; transition:3s"); 
+    pan02.setAttribute("style", "left: -586px; transition:3s"); 
     
    
     // 마지막 이미지 뒤에 첫번째 그림 붙이기
