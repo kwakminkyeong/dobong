@@ -259,23 +259,23 @@ slide_pan{
      transition: transform .3s;
 }
 .info div:first-child{
-     background:  url(https://www.dobong.go.kr/images/2023/main/info05_bg_icon_new.png) no-repeat ;
+     background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info05_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .info div:nth-child(2){
-     background:  url(https://www.dobong.go.kr/images/2023/main/info01_bg_icon_new.png) no-repeat ;
+     background: #ffdeb5 url(https://www.dobong.go.kr/images/2023/main/info01_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .info div:nth-child(3){
-     background:  url(https://www.dobong.go.kr/images/2023/main/info02_bg_icon_new.png) no-repeat ;
+     background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info02_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .info div:nth-child(4){
-     background:  url(https://www.dobong.go.kr/images/2023/main/info03_bg_icon_new.png) no-repeat ;
+     background: #ffdeb5 url(https://www.dobong.go.kr/images/2023/main/info03_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .info div:last-child{
-     background:  url(https://www.dobong.go.kr/images/2023/main/info04_bg_icon_new.png) no-repeat ;
+     background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info04_bg_icon_new.png) no-repeat ;
      background-size: auto;
 }
 .service{
