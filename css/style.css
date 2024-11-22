@@ -184,26 +184,17 @@ input[type="search"]:focus{
 #main{
      width:100%;
      height:100%;
-     / background-color: beige;
+    
 }
-#main::after{
-     content: "";
-     clear: both;
-     display: block;
-     /* border: 5px solid red; */
-}
+
 .main_01{
      width:1200px;
      margin: 0 auto;
      padding-top: 90px;
 }
-.main_01::after{
-     content: "";
-     clear: both;
-     display: block;
-}
+
 .ceo{
-     width:49%;
+     width:586px;
      background-color: azure;
      float: left;
      border-radius: 10px;
@@ -211,8 +202,7 @@ input[type="search"]:focus{
      overflow: hidden;
 }
 .slide{
-     width:49%;
-    
+     width:586px;
      float: right;
      border-radius: 10px;
      overflow: hidden;
@@ -220,7 +210,7 @@ input[type="search"]:focus{
 .slide_pan .pan01{
      width:5860px;
      position: relative;
-     transition:2s;
+     /* transition:2s; */
      
 }
 .slide_pan .pan01 div{
@@ -243,7 +233,6 @@ slide_pan{
      flex-wrap: wrap;
      justify-content:space-between;
      gap: 1rem;
-   
 }
 .info div{
      width:18.5%;
@@ -292,15 +281,10 @@ slide_pan{
 .service{
      width:100%;
      background-color: #fff7f4;
-     position: relative;
+     /* position: relative; */
      
 }
-.service::after{
-     clear: both;
-     content: "";
-     display: block;
-     border: 3px solid blueviolet;
-}
+
 .service_01{
      width:1200px;
      height:300px;
@@ -526,17 +510,23 @@ slide_pan{
 }
 .board{
      width:1200px;
+     height: 428px;
      margin: 0 auto;
      position: relative;
 }
+
 
 .board_title{
      width: 1200px;
      float: left;
 }
+.board_title::after{
+     clear: both;
+     content: "";
+     display: block;
+}
 
 .board_title li{
-     
      height:50px;
      font-size: 20px;
      font-weight: bold;
@@ -559,14 +549,14 @@ slide_pan{
      right: 16px;
      float: left;
      font-weight: 600;
-     
-} 
+}
+
 .board .go_more span{
      position: absolute;
      top:0px;
      left: 80px;
 }
-/*========================================이거 안돼요!!!*/
+
 .board_cont{
      width: 1200px;
      height: 270px;
@@ -575,12 +565,25 @@ slide_pan{
      flex-wrap: wrap;
      justify-content: space-between;
      gap: 1em;
-     background-color: rgb(255, 58, 91);
-     position: relative;
-     top: 33px;
-
+     position: absolute;
+     top: 87px;
 }
-/*==========.board에 position:relative주고 ==========================*/
+.board:nth-chaild(3){
+     position: absolute;
+     background-color: RED;
+     z-index: 47;
+}
+.board:nth-chaild(4){
+     position: absolute;
+     background-color: rgb(34, 75, 255);
+     z-index: 46;
+}
+.board:nth-chaild(5){
+     position: absolute;
+     background-color: rgb(146, 238, 27);
+     z-index: 45;
+}
+
 .contents {
      width:23%;
      height:261px;
