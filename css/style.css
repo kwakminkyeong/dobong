@@ -189,12 +189,14 @@ input[type="search"]:focus{
 
 .main_01{
      width:1200px;
+     
      margin: 0 auto;
      padding-top: 90px;
 }
 
 .ceo{
      width:586px;
+     height: 379px;
      background-color: azure;
      float: left;
      border-radius: 10px;
@@ -203,8 +205,10 @@ input[type="search"]:focus{
 }
 .slide{
      width:586px;
+     height: 379px;
      float: right;
      border-radius: 10px;
+     border: 1px solid #e1e1e1;
      overflow: hidden;
 }
 .slide_pan .pan01{
@@ -217,7 +221,7 @@ input[type="search"]:focus{
      float: left;
 }
 .pan01 div img{
-     /* width: 100%; */
+     width: 100%;
      height: 100%;
 }
 slide_pan{
@@ -1130,9 +1134,53 @@ slide_pan{
      height:50px;
      border: 1px solid #333;
      border-radius:15px;
+     font-size: 15px;
+     font-weight: 550;
      line-height: 50px;
-     text-align: center;
+     letter-spacing: -0.5px;
+     text-align: left;
+     padding-left: 13px;   
+     position: relative;
 } 
+.depth01>span{
+     width:15px;
+     height: 50px;
+     display: block;
+     position: absolute;
+     top:0px;
+     right:0px;
+     transform: translate(-20px, 41%);
+     background: url(https://www.dobong.go.kr/images/2023/main/arr_down.png) no-repeat;     
+}
+.depth02{
+     background: #fff;
+     border: 1px solid #ccc;
+     max-height: 144px;
+     overflow-y: auto;
+     border-radius: 10px;
+     margin-left: -14px;
+}
+.depth02::-webkit-scrollbar{
+     width:8px;
+}
+.depth02::-webkit-scrollbar-thumb{
+    height: 40%;
+    background: #ccc;
+    border-radius: 10px;
+}
+.depth02::-webkit-scrollbar-track{
+    background: #eee;
+    border-radius: 10px;
+}
+.depth02 a{
+    display: block;
+    height: 100%;
+    padding: 0px 14px;
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: #000;
+
+}
 .footer_info{
      width:100%;
      border-top:1px solid #333 ;
@@ -1309,7 +1357,7 @@ slide_pan{
      .header_top, .header_mid, .nav_menu,  .main_01, .info,.main, 
      .service_01, .board, .board_title, .filed, .filed_01,.filed_02, .news, .sns, 
      .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info_link, 
-     .add,.utill_box, .depth01e, .ceo>a>img,.slide,  .pan01>div>img{
+     .add,.utill_box, .depth01, .ceo>a>img,.slide,  .pan01>div>img{
           width: 100%;
         
      }
