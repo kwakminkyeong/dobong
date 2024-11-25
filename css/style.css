@@ -168,7 +168,7 @@ input[type="search"]:focus{
 .menu a{
      width:171px;
      color:white;
-     font-size: 18px;
+     font-size: 1.2em;
      font-weight:500;
      text-align: center;
      float: left;
@@ -775,7 +775,7 @@ slide_pan{
      gap: 1em;
 }
 .news > div:first-child{
-     width: 100%;
+     width: 1200px;
      height:25px;
      padding-left: 1144px;
      position: relative;
@@ -791,7 +791,7 @@ slide_pan{
      font-weight: 600;
      position: absolute;
      top:0px;
-     left: 1103px;
+     right: 0px;
 } 
  .news .go_more span{
      position: absolute;
@@ -1134,13 +1134,18 @@ slide_pan{
      height:50px;
      border: 1px solid #333;
      border-radius:15px;
-     font-size: 15px;
-     font-weight: 550;
+     font-size: 0.95em;
      line-height: 50px;
-     letter-spacing: -0.5px;
+     letter-spacing: -1.2px;
      text-align: left;
      padding-left: 13px;   
      position: relative;
+     cursor: pointer;
+} 
+.depth01 a{
+   color:#333;
+   font-weight: 530;
+
 } 
 .depth01>span{
      width:15px;
@@ -1159,6 +1164,7 @@ slide_pan{
      overflow-y: auto;
      border-radius: 10px;
      margin-left: -14px;
+     display: none;
 }
 .depth02::-webkit-scrollbar{
      width:8px;
@@ -1177,7 +1183,7 @@ slide_pan{
     height: 100%;
     padding: 0px 14px;
     border: 1px solid #e6e6e6;
-    font-size: 14px;
+    font-size: 0.9em;
     color: #000;
 
 }
@@ -1354,40 +1360,93 @@ slide_pan{
      .right_button{
           display: none;
      }
-     .header_top, .header_mid, .nav_menu,  .main_01, .info,.main, 
-     .service_01, .board, .board_title, .filed, .filed_01,.filed_02, .news, .sns, 
-     .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info_link, 
-     .add,.utill_box, .depth01, .ceo>a>img,.slide,  .pan01>div>img{
-          width: 100%;
-        
-     }
     
+}
+@media screen and (max-width:1259px) {
+   .header_top, .header_mid, .nav_menu,  .main_01, .info, .main, 
+   .service_01, .board_title, .filed, .filed_01,.filed_02, .sns, 
+   .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info, .info_link, 
+   .add,.utill_box, .pan, .filed{
+        width: 95%;
+   }
+   .ceo, .slide, .filed_01{
+     width: 49%;
+     }
+     .filed_con, .contents{
+          width:23%;
+     }
+     .news {
+          width: 94% ;
+     }
+     .news_slide{
+          width: 45%;
+     }
+     .news .go_more{
+          right:38px;
+     }
+
+     .sns_01, .sns_02{
+          width: 49%;
+     }
+
+     .depth01{
+          width: 18%;
+     }
+     /* .news > div:first-child,.info_div, , .news_pan .news_pan01>img{
+          width:75%;
+     } */
+
+     .filed_01 .title > a.go_more{
+          left: 448px;
+     }
      
-}
-@media screen and (max-width:1220px) {
-     .header_top, .header_mid, .nav_menu,  .main_01, .info, .service_01, .board, 
-     .board_title, .filed, .news, .sns, .site, .site_box, .family_site, .footer_logo, 
-     .footer_info_area, .info_link, .add,.utill_box{
-          width: 95%;
-         
-
+     .board{
+          width:90%;
      }
-    
-   
 }
+
+@media screen and ( max-width:1200px){
+     
+    .board_cont, .filed{
+     width: 98%;
+    }
+    .news_slide{
+          width: 40%;
+    }
+
+    .pan{
+     width: 83%;
+     }
+
+     .filed_con {
+          width: 22%;
+     }
+     
+     .filed_01 .title > a.go_more{
+          left: 448px;
+    }
+
+    .news .go_more{
+         right:38px;
+    }
+}
+
+@media screen and (max-width:1190px){
+
+
+
+}
+
 @media screen and (max-width:1120px) {
-       .main, .nav_menu,  .main_01, .info, .service_01, .board, .board_title, .filed, 
-       .news, .sns, .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info_link, 
-       .add,.utill_box{
-          width: 80%;
-       
+     .header_top, .header_mid, .nav_menu,  .main_01, .info, .main, 
+     .service_01, .board, .board_title, .filed, .filed_01,.filed_02, .news, .sns, 
+     .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info, .info_link, 
+     .add,.utill_box, .depth01{
+          width: 90%;
      }
 
-     .ceo ,.slide, .slide_pan, .pan01,  .info_div{
-          width:95%;
-          overflow: hidden;
-     }
-    
+     
+  
      .header_top, .bokjiro, .brandsong{
 
           display: none;
@@ -1397,10 +1456,11 @@ slide_pan{
      position: absolute;
      top:500px;
    }
+
    .utill_box {
     display: none;
+     }
 }
-
 
 @media screen and (max-width:955px) {
      /* .header_top, header_mid, .nav_menu,  .main_01, .info, .service_01, .board, .board_title, .filed, .news, .sns, .site, .family_site, .footer_logo, .footer_info_area, .info_link, .add,.utill_box{
