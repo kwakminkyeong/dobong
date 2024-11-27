@@ -94,7 +94,6 @@ html,body {
 
 
 
-
 .header_mid{
      width:1200px;
      height:110px;
@@ -107,12 +106,19 @@ html,body {
 .header_mid div{
      float: left;
 }
+.logo_mo {
+     width: 150px;
+     display: none;
+}
 
+.btn_mo{
+     display: none;
+}
 
 #search{
      width:430px;
      height: 50px;
-     border: 1px solid #3e3e3e;
+     border: 1px solid #b20000;
      border-radius: 25px;
      line-height: 110px;
      display: flex;
@@ -149,6 +155,7 @@ input[type="search"]:focus{
      float: left;
     
 }
+
 
 .burger{
      width:25px;
@@ -189,9 +196,33 @@ input[type="search"]:focus{
 
 .main_01{
      width:1200px;
-     
      margin: 0 auto;
      padding-top: 90px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.damwha_mo{
+     display: none;
+     float: left;
+     width: 586px;
+     border: none;
+     border-radius: 10px;
+     background-color: #BDE4F8;
+     cursor: pointer;
+     margin-top: 20px;
+}
+
+.sns_right_mo{
+     display: none;
+     float: left;
+     width: 586px;
+     border: none;
+     border-radius: 10px;
+     background-color: #E6E6E6;
+     cursor: pointer;
+     margin-top: 20px;
 }
 
 .ceo{
@@ -203,6 +234,10 @@ input[type="search"]:focus{
      border: 1px solid #e1e1e1;
      overflow: hidden;
 }
+.ceo > img{
+     width: 100%;
+}
+
 .slide{
      width:586px;
      height: 379px;
@@ -238,14 +273,14 @@ slide_pan{
      justify-content:space-between;
      gap: 1rem;
 }
-.info div{
+.info > div{
      width:18.5%;
      height:133px;
      background-color: green;
      border-radius: 13px;
      float: left;
 }
-.info div a{
+.info> div a{
      width:225px;
      height: 133px;
      padding: 15px 25px;
@@ -264,23 +299,23 @@ slide_pan{
 }
 .info div:first-child{
      background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info05_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .info div:nth-child(2){
      background: #ffdeb5 url(https://www.dobong.go.kr/images/2023/main/info01_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .info div:nth-child(3){
      background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info02_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .info div:nth-child(4){
      background: #ffdeb5 url(https://www.dobong.go.kr/images/2023/main/info03_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .info div:last-child{
      background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info04_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .service{
      width:100%;
@@ -551,7 +586,7 @@ slide_pan{
      line-height: 1.1em;
      position: absolute;
      top:15px;
-     right: 16px;
+     right: 0px;
      float: left;
      font-weight: 600;
 }
@@ -591,6 +626,7 @@ slide_pan{
      float: left;
      /* margin-bottom: 70px; */
      padding: 45px 25px 25px ;
+     position: relative;
 }
 .contents .contents_title{
      font-size: 18px;
@@ -633,9 +669,9 @@ slide_pan{
      width: 1.1em;
      background: url(https://www.dobong.go.kr/images/2023/main/icon_more.png) no-repeat center;
      background-size: auto;
-     position: relative;
-     top: -226px;
-     right: -215px;
+     position: absolute;
+     top: 10px;
+     right: 10px;
      transition:all .3s;
 }
     
@@ -670,13 +706,13 @@ slide_pan{
      font-weight: 700;
      float: left;
 }
-.filed_01 .title > a.go_more{
+.filed_01 .title > .go_more{
      display: block;
      font-size: 14px;
      line-height: 1.7em;
      position:absolute;
      top:0px;
-     left: 489px;
+     right: 17px;
      color: #000;
      font-weight: 600;
 }
@@ -704,7 +740,7 @@ slide_pan{
      
 }
 .filed_con .img_box{
-     width: 285px;
+     width: 100%;
      height: 186px;
      background-color:aquamarine;
      overflow: hidden;
@@ -720,6 +756,7 @@ slide_pan{
      height: 100%;
      object-fit: cover;
      transition: transform .3s;
+   
 }
 .filed_con .text_box{
      width:285px;
@@ -768,30 +805,26 @@ slide_pan{
 }
 .news{
      width:1200px;
+     height: 290px;
      margin: 0 auto;
      flex-wrap: wrap;
      display: flex;
      justify-content:space-between;
      gap: 1em;
-}
-.news > div:first-child{
-     width: 1200px;
-     height:25px;
-     padding-left: 1144px;
      position: relative;
 }
-.news .go_more{
-     font-size: 14px;
-     color: #000;
-     display: block;
-     height: 1.2em;
-     line-height: 1.1em;
+ .news > div:first-child{
+     width: 1200px;
     
-     float: left;
-     font-weight: 600;
+    
+} 
+ .news .go_more{
+     color: #000;
      position: absolute;
-     top:0px;
-     right: 0px;
+     top: -45px;
+     right: 17px;
+     font-size: 14px;
+     font-weight: 600;
 } 
  .news .go_more span{
      position: absolute;
@@ -846,20 +879,20 @@ slide_pan{
 }
 
 .news .info div:first-child{
-     width:285px;
+     width:100%;
      height:135px;
      margin-top: 0px;
      border-radius: 15px;
      color:#3f3f3f;
      background-color: rgb(100, 57, 2);
      background: url(https://www.dobong.go.kr/images/2023/main/ebook_bg_03.png) no-repeat top center / cover;
-     background-size: auto;
+     background-size: 100%;
      font-size: 20px;
      font-weight: 600;
      text-align: center;
 }
 .news .info div:nth-child(2){
-     width:285px;
+     width:100%;
      height:135px;
      border-radius: 15px;
      margin-top: 0.3em;
@@ -869,6 +902,7 @@ slide_pan{
      text-align: center;
      background-color: rgb(255, 72, 0);
      background: url(https://www.dobong.go.kr/images/2023/main/reporter_bg_01.png) no-repeat top center / cover;
+     background-size: 100%;
 }
 .news_slide{
      width:586px;
@@ -1050,6 +1084,7 @@ slide_pan{
      flex-wrap: wrap;
      justify-content: space-evenly;
      gap:1em;
+     margin: 0 auto;
      
 }
 .site_box_00 li{
@@ -1115,8 +1150,8 @@ slide_pan{
 
 #footer{
      width:100%;
-     /* position:absolute; */
-     top:3360px;                                        /*모니터가 바뀔때마다 위치가 바뀜*/
+     position:relative;
+     /* top:3360px;                                        모니터가 바뀔때마다 위치가 바뀜 */
      border-top:1px solid #333 ; 
 }
 .family_site{
@@ -1141,10 +1176,13 @@ slide_pan{
      padding-left: 13px;   
      position: relative;
      cursor: pointer;
+     font-weight: 400;
+     
 } 
 .depth01 a{
    color:#333;
-   font-weight: 530;
+   
+   white-space: normal;
 
 } 
 .depth01>span{
@@ -1195,15 +1233,13 @@ slide_pan{
      width:1200px;
      height: 100px;
      margin: 0 auto;
+     line-height: 100px;
 }
-.footer_logo img{
-     padding-top:60px ;
-}
+
 .footer_info_area{
      width: 1200px;
      height: 178px;
      margin: 0 auto;
-     position: relative;
 }
 .info_link{
     width: 1200px;
@@ -1211,7 +1247,7 @@ slide_pan{
     display: flex;
     flex-wrap: wrap;
     justify-content:left;
-    margin-top: 30px;
+   
 }
 .info_link li{
      float: left;
@@ -1246,6 +1282,10 @@ slide_pan{
    
      padding-left:10px;
 }
+.info_link li:first-child{
+   
+     padding-left:0px;
+}
 .add{
      width: 1200px;
      display: flex;
@@ -1270,10 +1310,11 @@ slide_pan{
 }
 .utill_box{
      width: 1200px;
+     height: 75px;
      margin: 0 auto;
-     position: absolute;
-     top:120px;
-     left:0px;
+     position: relative;
+     top: 30px;
+     left: 0px;
 }
 .utill_box div:first-child{
      width:252px;
@@ -1301,9 +1342,11 @@ slide_pan{
      
 }
 .wa{
+     width: 100%;
+     height: 100px;
      position: absolute;
-     top:22px;
-     left:999px;
+     top:295px;
+     right: -73%;
      
 }
 .wa li{
@@ -1312,7 +1355,7 @@ slide_pan{
      float: left;
 }
 .wa li img{
-     width: 100%;
+     width: 90%;
      
     
 }
@@ -1355,7 +1398,9 @@ slide_pan{
      text-align:center ;
 }
 
-/*반응형*/
+/*=============================================================================반응형*/
+
+
 @media screen and (max-width:1260px) {
      .right_button{
           display: none;
@@ -1364,7 +1409,7 @@ slide_pan{
 }
 @media screen and (max-width:1259px) {
    .header_top, .header_mid, .nav_menu,  .main_01, .info, .main, 
-   .service_01, .board_title, .filed, .filed_01,.filed_02, .sns, 
+   .service_01, .board_title, .filed, .filed_02, .sns,
    .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info, .info_link, 
    .add,.utill_box, .pan, .filed{
         width: 95%;
@@ -1381,10 +1426,7 @@ slide_pan{
      .news_slide{
           width: 45%;
      }
-     .news .go_more{
-          right:38px;
-     }
-
+ 
      .sns_01, .sns_02{
           width: 49%;
      }
@@ -1396,13 +1438,19 @@ slide_pan{
           width:75%;
      } */
 
-     .filed_01 .title > a.go_more{
-          left: 448px;
-     }
-     
+
+
      .board{
           width:90%;
      }
+     .board_cont{
+          width: 100%;
+     }
+     .wa{
+          width: 100%;
+          left: 940px;
+     }
+    
 }
 
 @media screen and ( max-width:1200px){
@@ -1418,59 +1466,263 @@ slide_pan{
      width: 83%;
      }
 
-     .filed_con {
-          width: 22%;
+
+     .news .info div:first-child{
+          height: 80%;
      }
-     
-     .filed_01 .title > a.go_more{
-          left: 448px;
-    }
+     .news .info div:nth-child(2){
+          height: 80%;
+          margin-top: -13px;
+     }
 
-    .news .go_more{
-         right:38px;
-    }
-}
-
-@media screen and (max-width:1190px){
-
-
+   
+     .depth01{
+          white-space: normal;
+     }
 
 }
+
+
 
 @media screen and (max-width:1120px) {
      .header_top, .header_mid, .nav_menu,  .main_01, .info, .main, 
-     .service_01, .board, .board_title, .filed, .filed_01,.filed_02, .news, .sns, 
-     .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info, .info_link, 
-     .add,.utill_box, .depth01{
-          width: 90%;
+     .service_01, .board, .board_title, .filed,.filed_02, .news, .sns, 
+     .site, .site_box, .family_site, .footer_logo, .footer_info_area, 
+     .utill_box, .depth01{
+          width: 95%;
      }
-
+     #nav{
+          display: none;
+     }
+     .header_mid{
+          position: relative;
+     }
+     .header_mid div:first-child{
+          width: 100%;
+          height: 80px;
+          justify-content: space-between;
+     }
+     .header_mid div:nth-child(3){
+          width: 100%;
+          height: 60px;
+          justify-items: center;
+     }
+     .logo2{
+          display: none;
+     }
+     .logo{
+          float: left;
+          display: block;
+          position: absolute;
+          top:0px;
+          left: 0px;
+          transform: translate(0%, 125%);
+     }
+     .logo_mo{
+          float: left;
+          display: block;
+          position: absolute;
+          top:0px;
+          left: 0px;
+          transform: translate(268%, 50%);
+     }
+     .btn_mo{
+          float: left;
+          display: block;
+          position: absolute;
+          top:0px;
+          right: 0px;
+          transform: translate(0%, 125%);
+          border: none;
+     }
+     .damwha_mo, .sns_right_mo{
+          display: block;
+          width: 49%;
+     }
+     .news{
+          gap: 0px;
+     }
+     .news_01{
+          width: 247px;
+          height: 90%;
+     }
+     .news > .info{
+          width: 29%;
+          height: 90%;
+     }
+     .news_slide{
+          width: 45%;
+          height: 90%;
+     }
+     .news .info div:first-child{
+          height: 80%;
+     }
+     .news .info div:nth-child(2){
+          height: 80%;
+          margin-top: -13px;
+     }
      
-  
      .header_top, .bokjiro, .brandsong{
 
           display: none;
      }
-    
-   .footer{
-     position: absolute;
-     top:500px;
-   }
 
-   .utill_box {
-    display: none;
+     .sns_01, .sns_02 {
+          height: 100%;
+      }
+    
+   
+      .sns_img{
+          padding-bottom: 100px;
+      }
+     .footer{
+          position: absolute;
+          top:500px;
+     }
+
+     .utill_box {
+           display: none;
+
+     }
+          
+     .family_site{
+          height: 120px;
+          display: flex;
+          justify-content: flex-start;
+     }
+     .depth01{
+          width: 32%;
+          
+     }
+     .footer_logo{
+          text-align: center;
+          height: 70px;
+        
+     }
+     .info_link, .add{
+          height: 40px;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-left: auto;
+          
+     }
+     .add li{
+          float: none;
+     
+     }
+     .add li:nth-child(1) {
+          height: 23px;
+          border: none;
+          margin-left: auto;
+     }
+     
+     .add li:nth-child(2) {
+          height: 23px;
+          padding-left: none;
+          margin-left: auto;
+     }
+
+     .depth02{
+          position: relative;
+          z-index: 77;
+          background-color: white;
+     }
+    
+     .info_link li a{
+          font-size: 15px;
+          letter-spacing: -1.8px;
+     }
+     .copy{
+          text-align: center;
+     }
+     .wa{
+          position: static;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3rem;
+          flex-direction: column;
+         
+     }
+     .wa li{
+          width: 90px;
      }
 }
 
-@media screen and (max-width:955px) {
-     /* .header_top, header_mid, .nav_menu,  .main_01, .info, .service_01, .board, .board_title, .filed, .news, .sns, .site, .family_site, .footer_logo, .footer_info_area, .info_link, .add,.utill_box{
-          width: 80%;
-     }
+@media screen and (max-width:1050px){
+     .news > .info {
+          width: 27%;
+}
 
-     .ceo , .ceo>a>img, .slide, .slide_pan, .pan01, .pan01>div>img ,.info_div{
-          width:95%;
-          overflow: hidden;
-     } */
+
+
+@media screen and (max-width:1020px) {
+     .news01{
+          height: 80%;
+     }
+     .news > .info {
+          width: 27%;
+     }
+}
+@media screen and (max-width:956px) {
     
-     
+     .ceo ,  .slide, .slide_pan, .pan01, .info_div{
+          width:49%;
+          height: 277px;
+     } 
+     .ceo>a>img {
+          max-width: 100%;
+          
+     }
+     .pan01 > div > img{
+          min-height: auto;
+          height: 100%;
+     }
+     .info_div {
+          background-size:100%;
+     }
+     .filed div:nth-child(4), .filed div:nth-child(6){
+          display: none;
+     }
+     .filed_con{
+          width: 47.5%;
+     }
+     .img_box > img{
+          width: 100%;
+     }
+     .news_01{
+          width: 24%;
+          height: 80%;
+     }
+     .news .info{
+          width: 24%;
+          height: 80%;
+     }
+     .news .info div:nth-child(2) {
+          margin-top: 2px;
+      }
+      .news .slide .news_pan{
+          height: 80%;
+     }
+     .news .info div a span{
+          width: 300px;
+          height: 133px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+          color: #000;
+          letter-spacing: -0.06em;
+          margin-right: 64px;
+      }
+
+      .news .info .arr{
+          background-size: 80%;
+      }
+      .info_link li  a, .info_link li:nth-child(2) a, .info_link li:nth-child(3) a,
+      .add, copy {
+          font-size: 15px;
+      }
+
+   
 }
