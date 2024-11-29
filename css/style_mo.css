@@ -401,7 +401,7 @@
     }
     .news_slide{
         width: 100%;
-        height: 335px;
+        height: 315px;
         margin-top: 25px;
     }
     .news_pan{
@@ -412,11 +412,11 @@
     }
     .news_01{
         width: 48%;
-        height: 400px;
+        height: 360px;
     }
     .news .info {
         width: 49%;
-        height: 333px;
+        height: 308px;
     }
 
     .news .info div a{
@@ -446,6 +446,10 @@
     }
     .sns_02 {
         height: calc(100% + 66px);
+    }
+
+    .sns_icon {
+        width: 100%;
     }
 
     .sns_img {
@@ -507,6 +511,10 @@
     .filed_01 {
         width: 48%;
     }
+    .snshover {
+        height: 395px;
+        top: -817px;
+    }
 }
 @media screen and (max-width: 769px) {
     .ceo, .slide, .slide_pan, .pan01{
@@ -567,5 +575,360 @@
     .sns_box li img {
         max-width: 45px;
     }
+    .snshover {
+        height: 415px;
+        top: -727px;
+    }
 }
+@media screen and (max-width: 700px){
+    .sns_icon div{
+        width: 90px;
+    }
+
+    .sns_icon div img {
+        width: 45px;
+    }
+    .news_01 {
+        width: 48%;
+        height: 315px;
+    }
+    .news .info {
+        width: 49%;
+        height: 279px;
+    }
+    .snshover {
+        height: 415px;
+        top: -667px;
+    }
+}
+@media screen and (max-width: 605px){
+    .sns_icon div {
+        height: 107px;
+    }
+    .sns_right {
+        height: 270px;
+        margin-top: -272px;
+    }
+    .snshover {
+        top:-517px;
+    }
+    .news_slide {
+        height: 272px;
+    }
+}
+
+@media screen and (max-width: 556px){
+    
+    .news_slide {
+        height: 251px;
+    }
+    .site_section{
+       
+        white-space: nowrap;
+        scrollbar-width: auto;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .header_top, .header_mid, .nav_menu, .main_01, .info, .main,
+    .service_01, .board, .board_title, .filed, .filed_02, .news,
+    .sns, .site, .site_box, .family_site, .footer_logo, .footer_info_area, .utill_box, .depth01 {
+        width: 92%;
+    }
+    .logo_mo {
+        transform: translate(82%, 50%);
+    }
+    .logo{
+        width: 27%;
+    }
+    #search{
+        width: 373px;
+    }
+    input[type="search"] {
+        width: 297px;
+    }
+    .damwha_mo, .sns_right_mo, .winter_mo {
+        position: relative;
+        top:-243px;
+        height: 60px;
+    }
+    .damwha_mo img, .sns_right_mo img, .winter_mo img {
+        width: 100%;
+    }
+    .info_div:nth-child(-n+5) {
+        width: 47%;
+        height: 110px;
+    }
+    .info_div:first-child {
+        width: 100%;
+    }
+    .service_box a {
+        width: 90px;
+        height: 90px;
+    }
+    .service_box:first-child a{
+        background-size:100%;
+   }   
+   .service_box:first-child a::before{
+        content: "채용공고";
+   }  
+   .service_box:nth-child(2) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(2) a::before{
+        content: "청년정책";
+   }
+   .service_box:nth-child(3) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(3) a::before{
+        content: "재건축재개발";
+   }
+   .service_box:nth-child(4) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(4) a::before{
+        content: "동물복지";
+   }
+   .service_box:nth-child(5) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(5) a::before{
+        content: "부서안내";
+   }
+   .service_box:nth-child(6) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(6) a::before{
+        content: "동·주민센터 안내";
+   }
+   .service_box:nth-child(7) a{
+        background-size:100%;
+   }
+   .service_box:nth-child(7) a::before{
+        content: "분야별 민원";
+   }
+   .service_box:nth-child(8) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(8) a::before{
+        content: "민원서식";
+   }
+   .service_box:nth-child(9) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(9) a::before{
+        content: "민원상담/신고";
+   }
+   .service_box:nth-child(10) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(10) a::before{
+        content: "행정자료실";
+   }
+   .service_box:nth-child(11) a{
+       background-size:100%;
+   }
+   .service_box:nth-child(11) a::before{
+        content: "대형폐기물 신청";
+   }
+   .service_box:nth-child(12) a{
+        background-size:100%;
+   }
+   .service_box:nth-child(12) a::before{
+        content: "칭찬합시다";
+   }
+   .service_box:nth-child(13) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(13) a::before{
+        content: "복지로 바로가기";
+   }
+   .service_box:nth-child(14) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(14) a::before{
+        content: "우수제안사례";
+   }
+   .service_box:nth-child(15) a{
+        background-size:100%;
+   }
+   .service_box:nth-child(15) a::before{
+        content: "구민제안";
+   }
+   .service_box:nth-child(16) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(16) a::before{
+        content: "심폐소생술교육";
+   }
+   .service_box:nth-child(17) a{
+       background-size:100%;
+   }
+   .service_box:nth-child(17) a::before{
+        content: "소형폐가전";
+   }
+   .service_box:nth-child(18) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(18) a::before{
+        content: "유통정보";
+   }
+   .service_box:nth-child(19) a{
+        background-size:100%;
+   }
+   .service_box:nth-child(19) a::before{
+        content: "노인일자리";
+   }
+   .service_box:nth-child(20) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(20) a::before{
+        content: "도봉구 일자리플러스 센터";
+   }
+   .service_box:nth-child(21) a{
+        background-size: 100%;
+   }
+   .service_box:nth-child(21) a::before{
+        content: "일자리 정책";
+   }
+   .board_title li:nth-child(-n+2) {
+    margin-right: 14px;
+    }
+    .board .go_more {
+        top:55px;
+    }
+    .board_cont {
+        flex-wrap: nowrap;
+    }
+    .news_01 {
+        width: 100%;
+        height: 386px;
+    }
+    .news .go_more{
+        top:750px;
+    }
+    .news .info {
+        width: 100%;
+        height: 279px;
+        margin-top: 15px;
+    }
+    .news_slide{
+        margin-top:110px;
+        height: 178px;
+    }
+    .depth01{
+        width: 47%;
+    }
+    .info_link li a, .add li, .copy {
+        font-size: 14px;
+    }
+    .footer_info_area {
+        height: 260px;
+    }
+    .add li:nth-child(1), .copy{
+        margin-top: 10px;
+    }
+    .add li{
+        letter-spacing: -1.05px;
+    }
+    .copy{
+        line-height: 13px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+   
+  
+
+    .logo_mo {
+        transform: translate(55%, 50%);
+    }
+    .logo {
+        width: 25%;
+    }
+    #search {
+        width: 291px;
+    }
+    input[type="search"] {
+        width: 199px;
+    }
+    .main_01{
+        padding-top: 60px;
+    }
+    .damwha_mo, .sns_right_mo, .winter_mo {
+        top: -122px;
+        height: 36px;
+    
+    }
+    .winter_mo {
+        margin-top: 14px;
+    }
+    .slide{
+        margin-top: -80px;
+    }
+    .info {
+        margin-top: 77px;
+    }
+    .service_box a {
+        margin: 0 2px;
+    }
+    .board_title li:nth-child(-n+2) {
+        margin-right: 8px;
+    }
+    .board_title li{
+        font-size: 18px;
+    }
+    
+    .filed_01 .title {
+        font-size: 20px;
+        letter-spacing: -1.8px;
+    }
+    .news_slide{
+        height: 136px;
+    }
+    .sns_01 {
+        height: 180px;
+    }
+    .sns_01 iframe {
+        height: 180px;
+    }
+    .sns_right {
+        height: 150px;
+        margin-top: -143px;
+    }
+    .sns_02 {
+        height: 95%;
+    }
+    .sns_img {
+        height: 790px;
+    }
+    .site_section .name:nth-child(-n+4) {
+        margin-right: 12px;
+    }
+    .site_section .name{
+        font-size: 16px;
+    }
+    .add li:nth-child(1), .copy {
+        margin-top: 37px;
+    }
+    .copy {
+        line-height: 20px;
+        margin-top: 67px;
+    }
+    .add li:nth-child(2){
+        line-height: 23px;
+    }
+
+    .snshover {
+        top: -420px;
+    }
+    .add li {
+        letter-spacing: -1.5px;
+    }
+
+
+
 }
