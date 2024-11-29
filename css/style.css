@@ -224,7 +224,20 @@ input[type="search"]:focus{
      cursor: pointer;
      margin-top: 20px;
 }
-
+.winter_mo{
+     display: none;
+     width: 1200px;
+     height: auto;
+     border: none;
+     border-radius: 10px;
+     background-color: #AEC8FE;
+     cursor: pointer;
+     margin-top: 20px;
+}
+.winter_mo img{
+     height: auto;
+     vertical-align: top;
+}
 .ceo{
      width:586px;
      height: 379px;
@@ -246,13 +259,18 @@ input[type="search"]:focus{
      border: 1px solid #e1e1e1;
      overflow: hidden;
 }
+.slide_pan{
+     width: 100%;
+}
 .slide_pan .pan01{
-     width:5860px;
+     width:1000%;
      position: relative;
      /* transition:2s; */
      
 }
 .slide_pan .pan01 div{
+    
+     height: 100%;
      float: left;
 }
 .pan01 div img{
@@ -586,7 +604,7 @@ slide_pan{
      line-height: 1.1em;
      position: absolute;
      top:15px;
-     right: 0px;
+     right: 17px;
      float: left;
      font-weight: 600;
 }
@@ -913,13 +931,17 @@ slide_pan{
      overflow: hidden;
      
 }
+.news_pan{
+     width: 100%;
+}
 .news_pan .news_pan01{
-     width:5860px;
+     width:1000%;
      position: relative;
      transition:2s;
      
 }
 .news_pan .news_pan01 div{
+     width: 10%;
      float: left;
 }
 .news_pan{
@@ -1273,8 +1295,8 @@ slide_pan{
      color:red;
      font-size: 17px;
 }
-.info_link li:nth-child(-n+7){
-     border-right:1px solid rgb(102, 102, 102) ;
+.info_link li:nth-child(-n+8){
+     border-left:1px solid rgb(102, 102, 102) ;
 }
 
 .info_link li:nth-child(-n+8){
@@ -1284,7 +1306,9 @@ slide_pan{
 .info_link li:first-child{
    
      padding-left:0px;
+     border: none;
 }
+
 .add{
      width: 1200px;
      display: flex;
