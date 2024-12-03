@@ -9,7 +9,7 @@
 }
 @media screen and (max-width:1259px) {
   .header_top, .header_mid, .nav_menu,  .main_01, .info, .main, 
-  .service_01, .board_title, .filed, .filed_02, .sns,
+  .service_01,.board, .board_title, .filed, .filed_02, .sns,
   .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info, .info_link, 
   .add,.utill_box, .pan, .filed{
        width: 95%;
@@ -17,43 +17,48 @@
 
   .ceo, .slide, .filed_01{
     width: 49%;
-    }
-   .filed_con{
+   }
+  .filed_con{
          width:23%;
-    }
-    .news {
+   }
+  .news {
          width: 94% ;
-    }
-    .news_slide{
+   }
+  .news_slide{
          width: 45%;
-    }
+   }
 
-    .sns_01, .sns_02{
+  .sns_01, .sns_02{
          width: 49%;
-    }
+   }
 
-    .depth01{
+  .depth01{
          width: 18%;
-    }
+   }
     /* .news > div:first-child,.info_div, , .news_pan .news_pan01>img{
          width:75%;
     } */
 
 
  
-    .board_cont{
-         width: 100%;
-    }
+    
     .wa{
-         width: 100%;
-         left: 940px;
+         left: 995px;
+    }
+    .utill_box {
+        left: -32px;
     }
    
 }
 
 @media screen and ( max-width:1200px){
     
-
+    #main{
+        height: 3310px;
+    }
+    #main .info{
+        width: 95%;
+    }
    .news_slide{
          width: 40%;
    }
@@ -76,6 +81,16 @@
          white-space: normal;
     }
 
+    .wa{
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        flex-direction: column;
+       
+   }
 }
 
 
@@ -239,15 +254,7 @@
     .copy{
          text-align: center;
     }
-    .wa{
-         position: static;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         gap: 3rem;
-         flex-direction: column;
-        
-    }
+   
     .wa li{
          width: 90px;
     }
@@ -266,6 +273,16 @@
     }
     .news > .info {
          width: 27%;
+    }
+    .news .info_01 {
+        width: 28%;
+    }
+    .news .info_01 div:first-child {
+        height: 42%;
+    }
+    .news .info_01 div:nth-child(2) {
+        height: 42%;
+        margin-top: 0.8em;
     }
 }
 @media screen and (max-width:956px) {

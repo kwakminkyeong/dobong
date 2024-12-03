@@ -17,7 +17,7 @@ ul{
 }
 
 
-html,body {
+html, body {
 	width: 100%;
 	height:100%;
 	font-family: "Noto Sans", sans-serif;
@@ -28,7 +28,15 @@ html,body {
 }
 
 /*==============================================================헤더*/
-
+#wrap{
+     width: 100%;
+     height: 100%;
+     background-color: blue;
+}
+#header{
+     width: 100%;
+     background-color: yellow;
+}
 #header > div:first-child{
      border-top: 1px solid #dadada;
      border-bottom: 1px solid #dadada;
@@ -190,7 +198,7 @@ input[type="search"]:focus{
 /*==================================================================메인*/
 #main{
      width:100%;
-     height:100%;
+     height:3100px;
     
 }
 
@@ -277,11 +285,8 @@ input[type="search"]:focus{
      width: 100%;
      height: 100%;
 }
-slide_pan{
-     width:100%;
-     background-color: green;
-}
-.info{
+
+#main .info{
      width:1200px;
      margin: 0 auto;
      padding-top: 25px;
@@ -291,10 +296,9 @@ slide_pan{
      justify-content:space-between;
      gap: 1rem;
 }
-.info > div{
+#main .info > div{
      width:18.5%;
      height:133px;
-     background-color: green;
      border-radius: 13px;
      float: left;
 }
@@ -389,7 +393,7 @@ slide_pan{
      flex-wrap: wrap;
      justify-content: space-between;
      gap:1em;
-     /* background-color: #ffdeb5; */
+     background-color: #ffdeb5;
      
 }
 
@@ -616,7 +620,7 @@ slide_pan{
 }
 
 .board_cont{
-     width: 1200px;
+     width: 100%;
      height: 270px;
      margin: 0 auto;
      display: flex;
@@ -867,14 +871,12 @@ slide_pan{
      justify-content: center;
  
 }
-.news .info{
+.news .info_01{
      width:285px;
      height:290px;
-     position: relative;
-     top:-24px;
  
 }
-.news .info .arr{
+.news .info_01 .arr{
      display: inline-block;
      background: url(https://www.dobong.go.kr/images/2023/main/arrow_gray.png) no-repeat center;
      width: 10px;
@@ -883,7 +885,7 @@ slide_pan{
      transition: transform .3s;
 }
 
-.news .info div a{
+.news .info_01 div a{
      width:300px;
      height: 133px;
      font-size: 20px;
@@ -892,7 +894,7 @@ slide_pan{
      letter-spacing: -0.06em;
 }
 
-.news .info div:first-child{
+.news .info_01 div:first-child{
      width:100%;
      height:135px;
      margin-top: 0px;
@@ -905,11 +907,11 @@ slide_pan{
      font-weight: 600;
      text-align: center;
 }
-.news .info div:nth-child(2){
+.news .info_01 div:nth-child(2){
      width:100%;
      height:135px;
      border-radius: 15px;
-     margin-top: 0.3em;
+     margin-top: 1em;
      color:#3f3f3f;
      font-size: 20px;
      font-weight: 600;
@@ -937,7 +939,6 @@ slide_pan{
      
 }
 .news_pan .news_pan01 div{
-     width: 10%;
      height: 100%;
      float: left;
 }
@@ -1362,11 +1363,11 @@ slide_pan{
      
 }
 .wa{
-     width: 300px;
+     width: 200px;
      height: 100px;
      position: absolute;
      top:295px;
-     right: 107px;
+     right: 217px;
      
 }
 .wa li{
@@ -1384,9 +1385,9 @@ slide_pan{
 
 .right_button{
      width:190px;
-     position: relative;
-     bottom:0px;
-     right:-1226px;
+     position: absolute;
+     top: 695px;
+     right: 0px;
      z-index: 66;
      
 }
