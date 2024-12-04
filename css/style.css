@@ -211,30 +211,42 @@ input[type="search"]:focus{
      justify-content: space-between;
 }
 
-.damwha_mo{
+.btn_3{
+     width: 100%;
      display: none;
+     margin-top: 20px;
+    
+}
+
+.damwha_mo{
+    
      float: left;
-     width: 586px;
+     width: 48%;
      border: none;
      border-radius: 10px;
      background-color: #BDE4F8;
      cursor: pointer;
-     margin-top: 20px;
 }
-
+.damwha_mo a img{
+     height: 100%;
+}
+.sns_right_mo a img{
+     height: 100%;
+}
 .sns_right_mo{
-     display: none;
-     float: left;
-     width: 586px;
+     float:right;
+     width: 48%;
      border: none;
      border-radius: 10px;
      background-color: #E6E6E6;
      cursor: pointer;
-     margin-top: 20px;
+}
+.winter_mo a img{
+     height: 100%;
 }
 .winter_mo{
-     display: none;
-     width: 1200px;
+     /* display: none; */
+     width: 100%;
      height: auto;
      border: none;
      border-radius: 10px;
