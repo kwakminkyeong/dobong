@@ -31,11 +31,11 @@ html, body {
 #wrap{
      width: 100%;
      height: 100%;
-     background-color: blue;
+     /* background-color: blue; */
 }
 #header{
      width: 100%;
-     background-color: yellow;
+     /* background-color: yellow; */
 }
 #header > div:first-child{
      border-top: 1px solid #dadada;
@@ -303,7 +303,7 @@ input[type="search"]:focus{
      float: left;
 }
 .info> div a{
-     width:225px;
+     /* width:225px; */
      height: 133px;
      padding: 15px 25px;
      font-size: 20px;
@@ -393,7 +393,7 @@ input[type="search"]:focus{
      flex-wrap: wrap;
      justify-content: space-between;
      gap:1em;
-     background-color: #ffdeb5;
+     /* background-color: #ffdeb5; */
      
 }
 
@@ -886,8 +886,8 @@ input[type="search"]:focus{
 }
 
 .news .info_01 div a{
-     width:300px;
-     height: 133px;
+     /* width:300px; */
+     /* height: 133px; */
      font-size: 20px;
      font-weight: bold;
      color: #000;
@@ -938,7 +938,8 @@ input[type="search"]:focus{
      transition:2s;
      
 }
-.news_pan .news_pan01 div{
+.news_pan .news_pan01 > div{
+     width: 10%;
      height: 100%;
      float: left;
 }
