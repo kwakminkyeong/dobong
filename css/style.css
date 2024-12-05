@@ -1400,7 +1400,7 @@ input[type="search"]:focus{
      width:190px;
      position: absolute;
      top: 695px;
-     right: 0px;
+     right:120px;
      z-index: 66;
      
 }
