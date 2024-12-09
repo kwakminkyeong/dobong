@@ -26,6 +26,19 @@ html, body {
      font-variation-settings: "wdth" 100;
     
 }
+/*===========================================================top btn*/
+.top{
+     width: 100px;
+     height: 100px;
+     position: fixed;
+     right:-8px;
+     bottom: 73px;
+     display: none;
+    
+}
+   
+     
+
 
 /*==============================================================헤더*/
 #wrap{
@@ -707,6 +720,7 @@ input[type="search"]:focus{
      top: 10px;
      right: 10px;
      transition:all .3s;
+     
 }
     
 
@@ -1212,9 +1226,10 @@ input[type="search"]:focus{
      
 } 
 .depth01 a{
-   color:#333;
-   
-   white-space: normal;
+     width: 100%;
+     color:#333;
+     white-space: normal;
+     line-height: 50px;
 
 } 
 .depth01>span{
@@ -1400,7 +1415,7 @@ input[type="search"]:focus{
      width:190px;
      position: absolute;
      top: 695px;
-     right:130px;
+     right: 130px;
      z-index: 66;
      
 }
