@@ -1,4 +1,6 @@
 window.onload=function(){
+
+
 //====================================================슬라이드01
 
 setInterval(function() {
@@ -265,18 +267,23 @@ let linkmore=document.getElementsByClassName("link_more");
     };
 
 
-//    const family=[depth01, depth02];
+//======================================= top btn
 
-//     for(let i=0; i<family.length; i++){
-//         family[i].addEventListener("mouseover", function(){
-//             this.setAttribute("style","font-weight:bold;");
-//         });
+let top = document.getElementsByClassName("top");
 
-//         family[i].addEventListener("mouseout", function(){
-//             this.removeAttribute("style");
-//         });
+window.addEventListener("scroll", function() {
+    let value = window.scrollY;
+    console.log("scrollY", value);
 
-//     };
-   
+    for (let i = 0; i < top.length; i++) {
+        if (value > 50) {
+            top[i].style.display = "block";
+            // top[i].style.animation="3s ease 3s 0.5 normal none running fadein";
+
+        } else {
+            top[i].style.display = "none";
+        }
+    }
+});
 	
 };    // 이 아래에는 아무것도 적으면 안됨
