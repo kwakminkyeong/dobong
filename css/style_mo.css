@@ -1,10 +1,15 @@
 /*=============================================================================반응형*/
-
+@media screen and (max-width:1669px) {
+    .right_button {
+        right: 10px;
+    }
+}
 
 @media screen and (max-width:1260px) {
     .right_button{
          display: none;
     }
+ ;
    
 }
 @media screen and (max-width:1259px) {
@@ -13,6 +18,9 @@
   .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info, .info_link, 
   .add,.utill_box, .pan, .filed{
        width: 95%;
+  }
+  .menu a {
+    width: 164px;
   }
 
   .ceo, .slide, .filed_01{
@@ -48,7 +56,12 @@
     }
    
 }
+@media screen and (max-width:1225px) {
 
+    .menu a {
+      width: 149px;
+    }
+}
 @media screen and ( max-width:1200px){
     
     #main{
@@ -88,6 +101,9 @@
         gap: 3rem;
         flex-direction: column;
        
+   }
+   #footer{
+    top: -192px;
    }
 }
 
@@ -193,9 +209,8 @@
      .sns_img{
          padding-bottom: 100px;
      }
-    .footer{
-         position: absolute;
-         top:500px;
+    #footer{
+         top:40px;
     }
 
     .utill_box {
@@ -537,9 +552,12 @@
         height: 359px;
         margin-top: -357px;
     }
+    #footer{
+        top:1262px;
+   }
     
 }
-@media screen and (max-width: 856px){
+@media screen and (max-width: 857px){
     #main {
         height: 4480px;
     }
@@ -562,6 +580,9 @@
         height: 395px;
         top: -817px;
     }
+    #footer{
+        top:0px;
+   }
 }
 
 @media screen and (max-width: 769px) {
@@ -689,6 +710,16 @@
         height: 415px;
         top: -667px;
     }
+    .site_section{
+        white-space: nowrap;
+        overflow: scroll;
+        overflow-y: hidden;
+    
+    }
+    .site_name{
+        width: 700px;
+        
+     }
 }
 @media screen and (max-width: 605px){
     .logo_mo {
@@ -722,9 +753,9 @@
     .winter_mo a img {
         width: 100%;
     }
-    .site_section .name:nth-child(-n+4) {
+    /* .site_section .name:nth-child(-n+4) {
         margin-right: 18px;
-    }
+    } */
 }
 
 @media screen and (max-width: 556px){
@@ -735,12 +766,7 @@
     .news_slide {
         height: 251px;
     }
-    .site_section{
-       
-        white-space: nowrap;
-        scrollbar-width: auto;
-        overflow-x: auto;
-    }
+   
     .btn_3 {
         margin-top: -313px;
      }
@@ -760,9 +786,9 @@
         height: 5579px;
     }
 
-    .site_section .name:nth-child(-n+4) {
+    /* .site_section .name:nth-child(-n+4) {
         margin-right: 7px;
-    }
+    } */
 
     #main .info > div:nth-child(n+2):nth-child(-n+5) {
         width: 47%;
@@ -798,6 +824,7 @@
     .info_div:first-child {
         width: 100%;
     }
+
     .service_box a {
         width: 90px;
         height: 90px;
@@ -957,9 +984,9 @@
         width: 47%;
     }
     .depth01 a {
-        color: #333;
-        white-space: pre;
-        letter-spacing: -0.2em;
+        width: 70%;
+        line-height: 19px;
+        margin-top: 8px;
     }
     .info_link li a, .add li, .copy {
         font-size: 14px;
@@ -1055,12 +1082,12 @@
     .sns_img {
         height: 790px;
     }
-    .site_section .name:nth-child(-n+4) {
+    /* .site_section .name:nth-child(-n+4) {
         margin-right: 12px;
-    }
-    .site_section .name{
+    } */
+    /* .site_section .name{
         font-size: 16px;
-    }
+    } */
     .add li:nth-child(1), .copy {
         margin-top: 37px;
     }

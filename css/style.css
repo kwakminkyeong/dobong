@@ -1098,7 +1098,7 @@ input[type="search"]:focus{
      margin-bottom: 70px;
 }
 .site_section{
-     height:100px;
+     height:70px;
      margin-top: 50px;
 }
 .site_section .name{
@@ -1132,7 +1132,7 @@ input[type="search"]:focus{
      justify-content: space-evenly;
      gap:1em;
      margin: 0 auto;
-     
+     margin-top: 50px;
 }
 .site_box_00 li{
      float: left;
