@@ -1,6 +1,7 @@
 window.onload=function(){
 
 
+<<<<<<< HEAD
 //===============메뉴:hover
 let menu=document.getElementsByClassName("menu");
 let menuA=document.querySelectorAll(".menu>a");
@@ -21,6 +22,8 @@ for(let i=0; i<menu.length; i++){
 
 
 
+=======
+>>>>>>> adf9cad52b17459fd506b501b30c7643dc5ac077
 //====================================================슬라이드01
 
 setInterval(function() {

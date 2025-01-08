@@ -17,7 +17,7 @@ ul{
 }
 
 
-html, body {
+html,body {
 	width: 100%;
 	height:100%;
 	font-family: "Noto Sans", sans-serif;
@@ -26,34 +26,9 @@ html, body {
      font-variation-settings: "wdth" 100;
     
 }
-/*===========================================================top btn*/
-.top{
-     width: 100px;
-     height: 100px;
-     position: fixed;
-<<<<<<< HEAD
-     right:19px;
-=======
-     right:118px;
->>>>>>> adf9cad52b17459fd506b501b30c7643dc5ac077
-     bottom: 73px;
-     display: none;
-    
-}
-   
-     
-
 
 /*==============================================================헤더*/
-#wrap{
-     width: 100%;
-     height: 100%;
-     /* background-color: blue; */
-}
-#header{
-     width: 100%;
-     /* background-color: yellow; */
-}
+
 #header > div:first-child{
      border-top: 1px solid #dadada;
      border-bottom: 1px solid #dadada;
@@ -170,11 +145,6 @@ input[type="search"]:focus{
      margin: 0 auto;
      
 }
-.menu{
-    float: left;
-    width: 171px;
-}
-
 .menu:first-child{
      text-align: left;
 }
@@ -203,8 +173,7 @@ input[type="search"]:focus{
 }
 
 .menu a{
-     /* width:171px; */
-     height: 45px;
+     width:171px;
      color:white;
      font-size: 1.2em;
      font-weight:500;
@@ -212,17 +181,16 @@ input[type="search"]:focus{
      float: left;
      letter-spacing: -0.06em;
 }
-
-/* .menu a:hover{
+.menu a:hover{
+    
      color:white;
      font-weight:bolder;
-     border-bottom: 2px solid rgb(125, 255, 38);
-   
-} */
+     border-bottom: 2px solid white;
+}
 /*==================================================================메인*/
 #main{
      width:100%;
-     height:3100px;
+     height:100%;
     
 }
 
@@ -233,48 +201,32 @@ input[type="search"]:focus{
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-<<<<<<< HEAD
-     position: relative;
-=======
->>>>>>> adf9cad52b17459fd506b501b30c7643dc5ac077
-}
-
-.btn_3{
-     width: 100%;
-     display: none;
-     margin-top: 20px;
-    
 }
 
 .damwha_mo{
-    
+     display: none;
      float: left;
-     width: 48%;
+     width: 586px;
      border: none;
      border-radius: 10px;
      background-color: #BDE4F8;
      cursor: pointer;
+     margin-top: 20px;
 }
-.damwha_mo a img{
-     height: 100%;
-}
-.sns_right_mo a img{
-     height: 100%;
-}
+
 .sns_right_mo{
-     float:right;
-     width: 48%;
+     display: none;
+     float: left;
+     width: 586px;
      border: none;
      border-radius: 10px;
      background-color: #E6E6E6;
      cursor: pointer;
-}
-.winter_mo a img{
-     height: 100%;
+     margin-top: 20px;
 }
 .winter_mo{
-     /* display: none; */
-     width: 100%;
+     display: none;
+     width: 1200px;
      height: auto;
      border: none;
      border-radius: 10px;
@@ -325,8 +277,11 @@ input[type="search"]:focus{
      width: 100%;
      height: 100%;
 }
-
-#main .info{
+slide_pan{
+     width:100%;
+     background-color: green;
+}
+.info{
      width:1200px;
      margin: 0 auto;
      padding-top: 25px;
@@ -336,14 +291,15 @@ input[type="search"]:focus{
      justify-content:space-between;
      gap: 1rem;
 }
-#main .info > div{
+.info > div{
      width:18.5%;
      height:133px;
+     background-color: green;
      border-radius: 13px;
      float: left;
 }
 .info> div a{
-     /* width:225px; */
+     width:225px;
      height: 133px;
      padding: 15px 25px;
      font-size: 20px;
@@ -660,7 +616,7 @@ input[type="search"]:focus{
 }
 
 .board_cont{
-     width: 100%;
+     width: 1200px;
      height: 270px;
      margin: 0 auto;
      display: flex;
@@ -735,7 +691,6 @@ input[type="search"]:focus{
      top: 10px;
      right: 10px;
      transition:all .3s;
-     
 }
     
 
@@ -748,7 +703,11 @@ input[type="search"]:focus{
      gap: 1em;
      margin-top: 45px;
 }
-
+.filed::after{
+     content: "";
+     clear:both;
+     display: block;
+}
 
 .filed_01{
      width:590px;
@@ -912,12 +871,14 @@ input[type="search"]:focus{
      justify-content: center;
  
 }
-.news .info_01{
+.news .info{
      width:285px;
      height:290px;
+     position: relative;
+     top:-24px;
  
 }
-.news .info_01 .arr{
+.news .info .arr{
      display: inline-block;
      background: url(https://www.dobong.go.kr/images/2023/main/arrow_gray.png) no-repeat center;
      width: 10px;
@@ -926,16 +887,16 @@ input[type="search"]:focus{
      transition: transform .3s;
 }
 
-.news .info_01 div a{
-     /* width:300px; */
-     /* height: 133px; */
+.news .info div a{
+     width:300px;
+     height: 133px;
      font-size: 20px;
      font-weight: bold;
      color: #000;
      letter-spacing: -0.06em;
 }
 
-.news .info_01 div:first-child{
+.news .info div:first-child{
      width:100%;
      height:135px;
      margin-top: 0px;
@@ -943,23 +904,23 @@ input[type="search"]:focus{
      color:#3f3f3f;
      background-color: rgb(100, 57, 2);
      background: url(https://www.dobong.go.kr/images/2023/main/ebook_bg_03.png) no-repeat top center / cover;
-     /* background-size: 100%; */
+     background-size: 100%;
      font-size: 20px;
      font-weight: 600;
      text-align: center;
 }
-.news .info_01 div:nth-child(2){
+.news .info div:nth-child(2){
      width:100%;
      height:135px;
      border-radius: 15px;
-     margin-top: 1em;
+     margin-top: 0.3em;
      color:#3f3f3f;
      font-size: 20px;
      font-weight: 600;
      text-align: center;
      background-color: rgb(255, 72, 0);
      background: url(https://www.dobong.go.kr/images/2023/main/reporter_bg_01.png) no-repeat top center / cover;
-     /* background-size: 100%; */
+     background-size: 100%;
 }
 .news_slide{
      width:586px;
@@ -979,9 +940,8 @@ input[type="search"]:focus{
      transition:2s;
      
 }
-.news_pan .news_pan01 > div{
+.news_pan .news_pan01 div{
      width: 10%;
-     height: 100%;
      float: left;
 }
 .news_pan{
@@ -1113,7 +1073,7 @@ input[type="search"]:focus{
      margin-bottom: 70px;
 }
 .site_section{
-     height:70px;
+     height:100px;
      margin-top: 50px;
 }
 .site_section .name{
@@ -1147,7 +1107,7 @@ input[type="search"]:focus{
      justify-content: space-evenly;
      gap:1em;
      margin: 0 auto;
-     margin-top: 50px;
+     
 }
 .site_box_00 li{
      float: left;
@@ -1241,10 +1201,9 @@ input[type="search"]:focus{
      
 } 
 .depth01 a{
-     width: 100%;
-     color:#333;
-     white-space: normal;
-     line-height: 50px;
+   color:#333;
+   
+   white-space: normal;
 
 } 
 .depth01>span{
@@ -1406,11 +1365,11 @@ input[type="search"]:focus{
      
 }
 .wa{
-     width: 200px;
+     width: 100%;
      height: 100px;
      position: absolute;
      top:295px;
-     right: 217px;
+     right: -73%;
      
 }
 .wa li{
@@ -1428,17 +1387,10 @@ input[type="search"]:focus{
 
 .right_button{
      width:190px;
-     position: absolute;
-<<<<<<< HEAD
-     top: 466px;
-     left: 1230px;
-     /* z-index: 66; */
-     
-=======
-     top: 695px;
-     right: 130px;
+     position: relative;
+     bottom:0px;
+     right:-1226px;
      z-index: 66;
->>>>>>> adf9cad52b17459fd506b501b30c7643dc5ac077
      
 }
 .right_button div:first-child{
@@ -1467,6 +1419,5 @@ input[type="search"]:focus{
      padding:30px 10px;
      border-radius: 15px;
      text-align:center ;
-     background-color: #fff;
 }
 
