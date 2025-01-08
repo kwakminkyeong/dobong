@@ -1,7 +1,7 @@
 window.onload=function(){
 
 
-//===============메뉴:hover
+//===============메뉴:hover  
 let menu=document.getElementsByClassName("menu");
 let menuA=document.querySelectorAll(".menu>a");
 for(let i=0; i<menu.length; i++){
