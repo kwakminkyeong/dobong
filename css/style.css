@@ -17,7 +17,7 @@ ul{
 }
 
 
-html,body {
+html, body {
 	width: 100%;
 	height:100%;
 	font-family: "Noto Sans", sans-serif;
@@ -26,9 +26,30 @@ html,body {
      font-variation-settings: "wdth" 100;
     
 }
+/*===========================================================top btn*/
+.top{
+     width: 100px;
+     height: 100px;
+     position: fixed;
+     right:19px;
+     bottom: 73px;
+     display: none;
+    
+}
+   
+     
+
 
 /*==============================================================헤더*/
-
+#wrap{
+     width: 100%;
+     height: 100%;
+     /* background-color: blue; */
+}
+#header{
+     width: 100%;
+     /* background-color: yellow; */
+}
 #header > div:first-child{
      border-top: 1px solid #dadada;
      border-bottom: 1px solid #dadada;
@@ -94,7 +115,6 @@ html,body {
 
 
 
-
 .header_mid{
      width:1200px;
      height:110px;
@@ -107,12 +127,19 @@ html,body {
 .header_mid div{
      float: left;
 }
+.logo_mo {
+     width: 150px;
+     display: none;
+}
 
+.btn_mo{
+     display: none;
+}
 
 #search{
      width:430px;
      height: 50px;
-     border: 1px solid #3e3e3e;
+     border: 1px solid #b20000;
      border-radius: 25px;
      line-height: 110px;
      display: flex;
@@ -139,6 +166,11 @@ input[type="search"]:focus{
      margin: 0 auto;
      
 }
+.menu{
+    float: left;
+    width: 171px;
+}
+
 .menu:first-child{
      text-align: left;
 }
@@ -149,6 +181,7 @@ input[type="search"]:focus{
      float: left;
     
 }
+
 
 .burger{
      width:25px;
@@ -166,34 +199,86 @@ input[type="search"]:focus{
 }
 
 .menu a{
-     width:171px;
+     /* width:171px; */
+     height: 45px;
      color:white;
-     font-size: 18px;
+     font-size: 1.2em;
      font-weight:500;
      text-align: center;
      float: left;
      letter-spacing: -0.06em;
 }
-.menu a:hover{
-    
+
+/* .menu a:hover{
      color:white;
      font-weight:bolder;
-     border-bottom: 2px solid white;
-}
+     border-bottom: 2px solid rgb(125, 255, 38);
+   
+} */
 /*==================================================================메인*/
 #main{
      width:100%;
-     height:100%;
+     height:3100px;
     
 }
 
 .main_01{
      width:1200px;
-     
      margin: 0 auto;
      padding-top: 90px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     position: relative;
 }
 
+.btn_3{
+     width: 100%;
+     display: none;
+     margin-top: 20px;
+    
+}
+
+.damwha_mo{
+    
+     float: left;
+     width: 48%;
+     border: none;
+     border-radius: 10px;
+     background-color: #BDE4F8;
+     cursor: pointer;
+}
+.damwha_mo a img{
+     height: 100%;
+}
+.sns_right_mo a img{
+     height: 100%;
+}
+.sns_right_mo{
+     float:right;
+     width: 48%;
+     border: none;
+     border-radius: 10px;
+     background-color: #E6E6E6;
+     cursor: pointer;
+}
+.winter_mo a img{
+     height: 100%;
+}
+.winter_mo{
+     /* display: none; */
+     width: 100%;
+     height: auto;
+     border: none;
+     border-radius: 10px;
+     background-color: #AEC8FE;
+     cursor: pointer;
+     margin-top: 20px;
+}
+.winter_mo img{
+     height: auto;
+     vertical-align: top;
+}
 .ceo{
      width:586px;
      height: 379px;
@@ -203,6 +288,10 @@ input[type="search"]:focus{
      border: 1px solid #e1e1e1;
      overflow: hidden;
 }
+.ceo > img{
+     width: 100%;
+}
+
 .slide{
      width:586px;
      height: 379px;
@@ -211,24 +300,26 @@ input[type="search"]:focus{
      border: 1px solid #e1e1e1;
      overflow: hidden;
 }
+.slide_pan{
+     width: 100%;
+}
 .slide_pan .pan01{
-     width:5860px;
+     width:1000%;
      position: relative;
      /* transition:2s; */
      
 }
 .slide_pan .pan01 div{
+    
+     height: 100%;
      float: left;
 }
 .pan01 div img{
      width: 100%;
      height: 100%;
 }
-slide_pan{
-     width:100%;
-     background-color: green;
-}
-.info{
+
+#main .info{
      width:1200px;
      margin: 0 auto;
      padding-top: 25px;
@@ -238,15 +329,14 @@ slide_pan{
      justify-content:space-between;
      gap: 1rem;
 }
-.info div{
+#main .info > div{
      width:18.5%;
      height:133px;
-     background-color: green;
      border-radius: 13px;
      float: left;
 }
-.info div a{
-     width:225px;
+.info> div a{
+     /* width:225px; */
      height: 133px;
      padding: 15px 25px;
      font-size: 20px;
@@ -264,23 +354,23 @@ slide_pan{
 }
 .info div:first-child{
      background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info05_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .info div:nth-child(2){
      background: #ffdeb5 url(https://www.dobong.go.kr/images/2023/main/info01_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .info div:nth-child(3){
      background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info02_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .info div:nth-child(4){
      background: #ffdeb5 url(https://www.dobong.go.kr/images/2023/main/info03_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .info div:last-child{
      background: #ffceca url(https://www.dobong.go.kr/images/2023/main/info04_bg_icon_new.png) no-repeat ;
-     background-size: auto;
+     background-size: 100%;
 }
 .service{
      width:100%;
@@ -551,7 +641,7 @@ slide_pan{
      line-height: 1.1em;
      position: absolute;
      top:15px;
-     right: 16px;
+     right: 17px;
      float: left;
      font-weight: 600;
 }
@@ -563,7 +653,7 @@ slide_pan{
 }
 
 .board_cont{
-     width: 1200px;
+     width: 100%;
      height: 270px;
      margin: 0 auto;
      display: flex;
@@ -591,6 +681,7 @@ slide_pan{
      float: left;
      /* margin-bottom: 70px; */
      padding: 45px 25px 25px ;
+     position: relative;
 }
 .contents .contents_title{
      font-size: 18px;
@@ -633,10 +724,11 @@ slide_pan{
      width: 1.1em;
      background: url(https://www.dobong.go.kr/images/2023/main/icon_more.png) no-repeat center;
      background-size: auto;
-     position: relative;
-     top: -226px;
-     right: -215px;
+     position: absolute;
+     top: 10px;
+     right: 10px;
      transition:all .3s;
+     
 }
     
 
@@ -649,11 +741,7 @@ slide_pan{
      gap: 1em;
      margin-top: 45px;
 }
-.filed::after{
-     content: "";
-     clear:both;
-     display: block;
-}
+
 
 .filed_01{
      width:590px;
@@ -670,13 +758,13 @@ slide_pan{
      font-weight: 700;
      float: left;
 }
-.filed_01 .title > a.go_more{
+.filed_01 .title > .go_more{
      display: block;
      font-size: 14px;
      line-height: 1.7em;
      position:absolute;
      top:0px;
-     left: 489px;
+     right: 17px;
      color: #000;
      font-weight: 600;
 }
@@ -704,7 +792,7 @@ slide_pan{
      
 }
 .filed_con .img_box{
-     width: 285px;
+     width: 100%;
      height: 186px;
      background-color:aquamarine;
      overflow: hidden;
@@ -720,6 +808,7 @@ slide_pan{
      height: 100%;
      object-fit: cover;
      transition: transform .3s;
+   
 }
 .filed_con .text_box{
      width:285px;
@@ -768,30 +857,26 @@ slide_pan{
 }
 .news{
      width:1200px;
+     height: 290px;
      margin: 0 auto;
      flex-wrap: wrap;
      display: flex;
      justify-content:space-between;
      gap: 1em;
-}
-.news > div:first-child{
-     width: 100%;
-     height:25px;
-     padding-left: 1144px;
      position: relative;
 }
-.news .go_more{
-     font-size: 14px;
-     color: #000;
-     display: block;
-     height: 1.2em;
-     line-height: 1.1em;
+ .news > div:first-child{
+     width: 1200px;
     
-     float: left;
-     font-weight: 600;
+    
+} 
+ .news .go_more{
+     color: #000;
      position: absolute;
-     top:0px;
-     left: 1103px;
+     top: -45px;
+     right: 17px;
+     font-size: 14px;
+     font-weight: 600;
 } 
  .news .go_more span{
      position: absolute;
@@ -820,14 +905,12 @@ slide_pan{
      justify-content: center;
  
 }
-.news .info{
+.news .info_01{
      width:285px;
      height:290px;
-     position: relative;
-     top:-24px;
  
 }
-.news .info .arr{
+.news .info_01 .arr{
      display: inline-block;
      background: url(https://www.dobong.go.kr/images/2023/main/arrow_gray.png) no-repeat center;
      width: 10px;
@@ -836,39 +919,40 @@ slide_pan{
      transition: transform .3s;
 }
 
-.news .info div a{
-     width:300px;
-     height: 133px;
+.news .info_01 div a{
+     /* width:300px; */
+     /* height: 133px; */
      font-size: 20px;
      font-weight: bold;
      color: #000;
      letter-spacing: -0.06em;
 }
 
-.news .info div:first-child{
-     width:285px;
+.news .info_01 div:first-child{
+     width:100%;
      height:135px;
      margin-top: 0px;
      border-radius: 15px;
      color:#3f3f3f;
      background-color: rgb(100, 57, 2);
      background: url(https://www.dobong.go.kr/images/2023/main/ebook_bg_03.png) no-repeat top center / cover;
-     background-size: auto;
+     /* background-size: 100%; */
      font-size: 20px;
      font-weight: 600;
      text-align: center;
 }
-.news .info div:nth-child(2){
-     width:285px;
+.news .info_01 div:nth-child(2){
+     width:100%;
      height:135px;
      border-radius: 15px;
-     margin-top: 0.3em;
+     margin-top: 1em;
      color:#3f3f3f;
      font-size: 20px;
      font-weight: 600;
      text-align: center;
      background-color: rgb(255, 72, 0);
      background: url(https://www.dobong.go.kr/images/2023/main/reporter_bg_01.png) no-repeat top center / cover;
+     /* background-size: 100%; */
 }
 .news_slide{
      width:586px;
@@ -879,13 +963,18 @@ slide_pan{
      overflow: hidden;
      
 }
+.news_pan{
+     width: 100%;
+}
 .news_pan .news_pan01{
-     width:5860px;
+     width:1000%;
      position: relative;
      transition:2s;
      
 }
-.news_pan .news_pan01 div{
+.news_pan .news_pan01 > div{
+     width: 10%;
+     height: 100%;
      float: left;
 }
 .news_pan{
@@ -1017,7 +1106,7 @@ slide_pan{
      margin-bottom: 70px;
 }
 .site_section{
-     height:100px;
+     height:70px;
      margin-top: 50px;
 }
 .site_section .name{
@@ -1050,7 +1139,8 @@ slide_pan{
      flex-wrap: wrap;
      justify-content: space-evenly;
      gap:1em;
-     
+     margin: 0 auto;
+     margin-top: 50px;
 }
 .site_box_00 li{
      float: left;
@@ -1115,8 +1205,7 @@ slide_pan{
 
 #footer{
      width:100%;
-     /* position:absolute; */
-     top:3360px;                                        /*모니터가 바뀔때마다 위치가 바뀜*/
+     position:relative;
      border-top:1px solid #333 ; 
 }
 .family_site{
@@ -1134,13 +1223,22 @@ slide_pan{
      height:50px;
      border: 1px solid #333;
      border-radius:15px;
-     font-size: 15px;
-     font-weight: 550;
+     font-size: 0.95em;
      line-height: 50px;
-     letter-spacing: -0.5px;
+     letter-spacing: -1.2px;
      text-align: left;
      padding-left: 13px;   
      position: relative;
+     cursor: pointer;
+     font-weight: 400;
+     
+} 
+.depth01 a{
+     width: 100%;
+     color:#333;
+     white-space: normal;
+     line-height: 50px;
+
 } 
 .depth01>span{
      width:15px;
@@ -1159,6 +1257,7 @@ slide_pan{
      overflow-y: auto;
      border-radius: 10px;
      margin-left: -14px;
+     display: none;
 }
 .depth02::-webkit-scrollbar{
      width:8px;
@@ -1177,7 +1276,7 @@ slide_pan{
     height: 100%;
     padding: 0px 14px;
     border: 1px solid #e6e6e6;
-    font-size: 14px;
+    font-size: 0.9em;
     color: #000;
 
 }
@@ -1189,15 +1288,13 @@ slide_pan{
      width:1200px;
      height: 100px;
      margin: 0 auto;
+     line-height: 100px;
 }
-.footer_logo img{
-     padding-top:60px ;
-}
+
 .footer_info_area{
      width: 1200px;
      height: 178px;
      margin: 0 auto;
-     position: relative;
 }
 .info_link{
     width: 1200px;
@@ -1205,7 +1302,7 @@ slide_pan{
     display: flex;
     flex-wrap: wrap;
     justify-content:left;
-    margin-top: 30px;
+   
 }
 .info_link li{
      float: left;
@@ -1232,14 +1329,20 @@ slide_pan{
      color:red;
      font-size: 17px;
 }
-.info_link li:nth-child(-n+7){
-     border-right:1px solid rgb(102, 102, 102) ;
+.info_link li:nth-child(-n+8){
+     border-left:1px solid rgb(102, 102, 102) ;
 }
 
 .info_link li:nth-child(-n+8){
    
      padding-left:10px;
 }
+.info_link li:first-child{
+   
+     padding-left:0px;
+     border: none;
+}
+
 .add{
      width: 1200px;
      display: flex;
@@ -1264,10 +1367,11 @@ slide_pan{
 }
 .utill_box{
      width: 1200px;
+     height: 75px;
      margin: 0 auto;
-     position: absolute;
-     top:120px;
-     left:0px;
+     position: relative;
+     top: 30px;
+     left: 0px;
 }
 .utill_box div:first-child{
      width:252px;
@@ -1295,9 +1399,11 @@ slide_pan{
      
 }
 .wa{
+     width: 200px;
+     height: 100px;
      position: absolute;
-     top:22px;
-     left:999px;
+     top:295px;
+     right: 217px;
      
 }
 .wa li{
@@ -1306,7 +1412,7 @@ slide_pan{
      float: left;
 }
 .wa li img{
-     width: 100%;
+     width: 90%;
      
     
 }
@@ -1315,22 +1421,23 @@ slide_pan{
 
 .right_button{
      width:190px;
-     position: relative;
-     bottom:0px;
-     right:-1226px;
-     z-index: 66;
+     position: absolute;
+     top: 466px;
+     left: 1230px;
+     /* z-index: 66; */
+     
      
 }
 .right_button div:first-child{
      position: absolute;
-     top: -253px;
+     top: -631px;
      right: 24px;
 
 }
 .right_button button[type="button"]{
      position: absolute;
      width: 100%;
-     top:-70px;
+     top:-450px;
      left:0px;
      height:50px;
      background: url(../img/img_damhwa.png);
@@ -1342,75 +1449,11 @@ slide_pan{
      width:190px;
      height: 540px;
      position: absolute;
-     top:-20px;
+     top:-400px;
      border:1px solid #e1e1e1;
      padding:30px 10px;
      border-radius: 15px;
      text-align:center ;
+     background-color: #fff;
 }
 
-/*반응형*/
-@media screen and (max-width:1260px) {
-     .right_button{
-          display: none;
-     }
-     .header_top, .header_mid, .nav_menu,  .main_01, .info,.main, 
-     .service_01, .board, .board_title, .filed, .filed_01,.filed_02, .news, .sns, 
-     .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info_link, 
-     .add,.utill_box, .depth01, .ceo>a>img,.slide,  .pan01>div>img{
-          width: 100%;
-        
-     }
-    
-     
-}
-@media screen and (max-width:1220px) {
-     .header_top, .header_mid, .nav_menu,  .main_01, .info, .service_01, .board, 
-     .board_title, .filed, .news, .sns, .site, .site_box, .family_site, .footer_logo, 
-     .footer_info_area, .info_link, .add,.utill_box{
-          width: 95%;
-         
-
-     }
-    
-   
-}
-@media screen and (max-width:1120px) {
-       .main, .nav_menu,  .main_01, .info, .service_01, .board, .board_title, .filed, 
-       .news, .sns, .site, .site_box, .family_site, .footer_logo, .footer_info_area, .info_link, 
-       .add,.utill_box{
-          width: 80%;
-       
-     }
-
-     .ceo ,.slide, .slide_pan, .pan01,  .info_div{
-          width:95%;
-          overflow: hidden;
-     }
-    
-     .header_top, .bokjiro, .brandsong{
-
-          display: none;
-     }
-    
-   .footer{
-     position: absolute;
-     top:500px;
-   }
-   .utill_box {
-    display: none;
-}
-
-
-@media screen and (max-width:955px) {
-     /* .header_top, header_mid, .nav_menu,  .main_01, .info, .service_01, .board, .board_title, .filed, .news, .sns, .site, .family_site, .footer_logo, .footer_info_area, .info_link, .add,.utill_box{
-          width: 80%;
-     }
-
-     .ceo , .ceo>a>img, .slide, .slide_pan, .pan01, .pan01>div>img ,.info_div{
-          width:95%;
-          overflow: hidden;
-     } */
-    
-     
-}

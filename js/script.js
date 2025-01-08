@@ -1,4 +1,26 @@
 window.onload=function(){
+
+
+//===============메뉴:hover
+let menu=document.getElementsByClassName("menu");
+let menuA=document.querySelectorAll(".menu>a");
+for(let i=0; i<menu.length; i++){
+   
+    menu[i].addEventListener("mouseover", function(){
+        menuA[i].setAttribute("style","font-weight:900; border-bottom:2px solid #fff;");
+    });
+
+    menu[i].addEventListener("mouseout", function(){
+        menuA[i].setAttribute("style","font-weight:400;");
+    });
+   
+}
+
+
+
+
+
+
 //====================================================슬라이드01
 
 setInterval(function() {
@@ -6,7 +28,7 @@ setInterval(function() {
     let firstChild = pan01.querySelector("div:first-child");
 
     // 좌측이동 ============================================================좌측으로 부드럽게 이동하기
-    pan01.setAttribute("style", "left: -586px; transition:3s"); 
+    pan01.setAttribute("style", "left: -586px; "); 
     
    
     // 마지막 이미지 뒤에 첫번째 그림 붙이기
@@ -21,7 +43,7 @@ setInterval(function() {
 
 
     //======좌측이등======
-    pan02.setAttribute("style", "left: -586px; transition:3s"); 
+    pan02.setAttribute("style", "left: -586px;"); 
     
    
     // 마지막 이미지 뒤에 첫번째 그림 붙이기
@@ -78,7 +100,7 @@ for (let i = 0; i < news.length; i++) {
 
     if (news_img) {
         news_img.addEventListener("mouseover", function(){
-            this.setAttribute("style", "scale:105%; ");
+            this.setAttribute("style", " transform: translate(-45%, -45.5%); scale:110%; ");
     
         });
 
@@ -218,8 +240,70 @@ let linkmore=document.getElementsByClassName("link_more");
     };
 
     
-	//================================================================== sns
+	//================================================================== family site
+    let depth01=document.querySelectorAll(".depth01 > a");
+    let depth02=document.querySelectorAll(".depth02");
+    let depthdeg=document.querySelectorAll(".depth01 > span");
+
+
+    
    
+    for(let i=0; i<depth01.length; i++){
+        depth01[i].addEventListener("mouseover", function(){
+            this.setAttribute("style","font-weight:bold;");
+            
+        });
+
+        depth01[i].addEventListener("mouseout", function(){
+            this.removeAttribute("style");
+            
+        });
+
+        depth01[i].addEventListener("click", function(){
+            depthDisplaynone();
+            depth02[i].setAttribute("style","display:block;");
+            
+            depthdeg[i].setAttribute("style","transform:translate(-100%, -40%) rotate(180deg); transition:0.3s;");
+           
+        });
+
+        function depthDisplaynone(){
+            for(let j=0; j<depth01.length; j++ ){
+                depth01[j].addEventListener("click", function(){
+                    depth02[i].setAttribute("style","display:none;");
+                    depthdeg[i].removeAttribute("style");
+                });
+
+                
+        
+            };
+        
+        };
+
+      
+        
+       
+
+    };
+
+
+//======================================= top btn
+
+let top = document.getElementsByClassName("top");
+
+window.addEventListener("scroll", function() {
+    let value = window.scrollY;
+    console.log("scrollY", value);
+
+    for (let i = 0; i < top.length; i++) {
+        if (value > 50) {
+            top[i].style.display = "block";
+            // top[i].style.animation="3s ease 3s 0.5 normal none running fadein";
+
+        } else {
+            top[i].style.display = "none";
+        }
+    }
+});
 	
 };    // 이 아래에는 아무것도 적으면 안됨
-
