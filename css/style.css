@@ -31,11 +31,7 @@ html, body {
      width: 100px;
      height: 100px;
      position: fixed;
-<<<<<<< HEAD
      right:19px;
-=======
-     right:118px;
->>>>>>> adf9cad52b17459fd506b501b30c7643dc5ac077
      bottom: 73px;
      display: none;
     
@@ -233,10 +229,7 @@ input[type="search"]:focus{
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-<<<<<<< HEAD
      position: relative;
-=======
->>>>>>> adf9cad52b17459fd506b501b30c7643dc5ac077
 }
 
 .btn_3{
@@ -1429,16 +1422,10 @@ input[type="search"]:focus{
 .right_button{
      width:190px;
      position: absolute;
-<<<<<<< HEAD
      top: 466px;
      left: 1230px;
      /* z-index: 66; */
      
-=======
-     top: 695px;
-     right: 130px;
-     z-index: 66;
->>>>>>> adf9cad52b17459fd506b501b30c7643dc5ac077
      
 }
 .right_button div:first-child{
